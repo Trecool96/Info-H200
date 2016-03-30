@@ -4,10 +4,13 @@ import View.Window;
 
 public class Main {
 	public static void main(String[] args) {
-		Window window = new Window();
+		int size = 20;
 		
-		Game game = new Game(window);
+		Window window = new Window(size*50, size*50+22);
+		
+		Game game = new Game(window,size);
 		Keyboard keyboard = new Keyboard(game);
 		window.setKeyListener(keyboard);
 	}
 }
+
