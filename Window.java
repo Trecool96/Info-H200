@@ -9,11 +9,11 @@ import javax.swing.JFrame;
 public class Window {
 	private Map map = new Map();
 	
-	public Window(){	    
-	    JFrame window = new JFrame("Game");
+	public Window(int x_max, int y_max){	    
+	    JFrame window = new JFrame("Bloody Boucherie");
 	    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    window.setBounds(0, 0, 1000, 1000);
-	    window.getContentPane().setBackground(Color.gray);
+	    window.setBounds(0, 0, x_max,y_max);
+	    window.getContentPane().setBackground(Color.yellow);
 	    window.getContentPane().add(this.map);
 	    window.setVisible(true);		    
 	}	
