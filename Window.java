@@ -12,7 +12,7 @@ public class Window {
 	public Window(int x_max, int y_max){	    
 	    JFrame window = new JFrame("Bloody Boucherie");
 	    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    window.setBounds(0, 0, x_max,y_max);
+	    window.setBounds(200, 0, x_max,y_max);
 	    window.getContentPane().setBackground(Color.yellow);
 	    window.getContentPane().add(this.map);
 	    window.setVisible(true);		    
@@ -25,4 +25,5 @@ public class Window {
 	public void setKeyListener(KeyListener keyboard){
 	    this.map.addKeyListener(keyboard);
 	}
+	
 }
